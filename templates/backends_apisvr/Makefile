@@ -16,7 +16,7 @@ include $(PATH_TO_GOVELTEMK)/makefiles/apisvr/connect-go.mk
 
 # run, run_with_devbug
 # PATH_TO_CMD_APISVR needs dot as an argument fo go run
-PATH_TO_CMD_APISVR=./services/cmd/apisvr
+PATH_TO_CMD_APISVR=./cmd/server
 include $(PATH_TO_GOVELTEMK)/makefiles/apisvr/run.mk
 
 # dev, dev_container_up, dev_container_down
