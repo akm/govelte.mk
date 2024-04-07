@@ -32,6 +32,7 @@
   "homepage": "https://github.com/akm/govelte.mk#readme",
   "devDependencies": {
     "@eslint/js": "^9.0.0",
+    "@types/node": "^20.12.5",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.0.0",
