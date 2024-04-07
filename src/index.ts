@@ -1,4 +1,5 @@
 import { cwd, argv } from "node:process";
+import { copyFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 // argv[0] is the path to the node executable
@@ -7,6 +8,11 @@ import { resolve } from "node:path";
 // argv[3] is the second argument after the script name, and so on
 
 switch (argv[2]) {
+  case "init":
+    copyFileSync(
+      __dirname + "/../templates/.govelte.config.mk",
+      ".govelte.config.mk",
+    );
   case "dir":
     console.log(resolve(__dirname, ".."));
     break;
