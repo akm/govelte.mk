@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "goveltemk": "./bin/goveltemk.js"
+  },
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "lint": "eslint .",
     "fix": "prettier . --write",
