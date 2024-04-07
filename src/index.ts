@@ -13,6 +13,7 @@ switch (argv[2]) {
       __dirname + "/../templates/.govelte.config.mk",
       ".govelte.config.mk",
     );
+    copyFileSync(__dirname + "/../templates/Makefile", "Makefile");
   case "dir":
     console.log(resolve(__dirname, ".."));
     break;
