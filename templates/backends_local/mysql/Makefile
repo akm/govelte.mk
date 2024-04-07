@@ -1,0 +1,5 @@
+PATH_TO_PROJECT:=../../..
+include $(PATH_TO_PROJECT)/.config.mk
+
+APP_MYSQL_DB_NAME=$(APP_MYSQL_DATABASE_NAME)
+include $(PATH_TO_GOAVELTE_MAKEFILES)/mysql/base.mk
