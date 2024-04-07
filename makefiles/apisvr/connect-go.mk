@@ -1,5 +1,6 @@
 .PHONY: setup
-setup: go.mod install_libraries install_tools buf.yaml
+setup: go.mod install_libraries install_tools
+	$(MAKE) -C proto setup
 
 go.mod:
 	go mod init apisvr

@@ -1,3 +1,6 @@
+.PHONY: setup
+setup: buf.yaml
+
 buf.yaml:
 	buf mod init
 
