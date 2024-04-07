@@ -1,0 +1,15 @@
+Now get started create your uisvr.
+Please follow the following steps to create your uisvr.
+
+1. Which Svelte app template?
+==> Skeleton project
+
+2. Add type checking with TypeScript?
+==> Yes, using TypeScript syntax
+
+3. Select additional options (use arrow keys/space bar)
+==> Check the following items by pressing the space bar:
+* ESLint
+* Prettier
+* Playwright
+* Vitest
