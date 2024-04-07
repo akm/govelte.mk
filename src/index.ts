@@ -10,10 +10,10 @@ import { resolve } from "node:path";
 switch (argv[2]) {
   case "init":
     copyFileSync(
-      __dirname + "/../templates/.govelte.config.mk",
+      __dirname + "/../templates/root/.govelte.config.mk",
       ".govelte.config.mk",
     );
-    copyFileSync(__dirname + "/../templates/Makefile", "Makefile");
+    copyFileSync(__dirname + "/../templates/root/Makefile", "Makefile");
   case "dir":
     console.log(resolve(__dirname, ".."));
     break;

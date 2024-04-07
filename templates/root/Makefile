@@ -4,6 +4,7 @@ default: build lint test
 PATH_TO_PROJECT=.
 include $(PATH_TO_PROJECT)/.govelte.config.mk
 include $(PATH_TO_GOVELTEMK)/makefiles/root/asdf.mk
+include $(PATH_TO_GOVELTEMK)/makefiles/root/children.mk
 
 .PHONY: build
 build:
