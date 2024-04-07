@@ -17,11 +17,9 @@ install_tools:
 	go install connectrpc.com/connect/cmd/protoc-gen-connect-go@latest && \
 	$(MAKE) asdf_reshim
 
-buf.yaml:
-	buf mod init
-
-gen: generate
+gen:
+	$(MAKE) -C proto generate
 
 .PHONY: generate
-generate: buf.yaml
-	buf generate
+generate:
+	$(MAKE) -C proto generate
