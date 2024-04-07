@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/akm/govelte.mk/issues"
   },
-  "homepage": "https://github.com/akm/govelte.mk#readme"
+  "homepage": "https://github.com/akm/govelte.mk#readme",
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
 }
