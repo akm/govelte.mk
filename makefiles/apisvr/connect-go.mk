@@ -2,7 +2,7 @@
 setup: go.mod install_libraries install_tools buf.yaml
 
 go.mod:
-	go mod init apisvr && \
+	go mod init apisvr
 
 .PHONY: install_libraries
 install_libraries: go.mod
@@ -19,3 +19,9 @@ install_tools:
 
 buf.yaml:
 	buf mod init
+
+gen: generate
+
+.PHONY: generate
+generate: buf.yaml
+	buf generate
