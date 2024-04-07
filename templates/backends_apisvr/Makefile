@@ -11,8 +11,8 @@ include $(PATH_TO_GOVELTEMK)/makefiles/git/check.mk
 include $(PATH_TO_GOVELTEMK)/makefiles/golang/build.mk
 include $(PATH_TO_GOVELTEMK)/makefiles/golang/lint.mk
 
-# setup
-include $(PATH_TO_GOVELTEMK)/makefiles/apisvr/setup.mk
+# connect-go
+include $(PATH_TO_GOVELTEMK)/makefiles/apisvr/connect-go.mk
 
 # run, run_with_devbug
 # PATH_TO_CMD_APISVR needs dot as an argument fo go run
