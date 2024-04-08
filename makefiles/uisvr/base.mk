@@ -4,12 +4,13 @@ $(PATH_TO_NODE_MODULES):
 
 .PHONY: install
 install:
-	npm install
+	npm install && \
+	npm install --save-dev @bufbuild/buf @connectrpc/protoc-gen-connect-es @bufbuild/protoc-gen-es && \
+	npm install @connectrpc/connect @connectrpc/connect-web @bufbuild/protobuf
 
-# TODO npm run build ではなく npm run check を使うように変更
 .PHONY: build
 build: $(PATH_TO_NODE_MODULES) $(BUILD_DEPS)
-	npm run build
+	npm run check
 
 .PHONY: lint
 lint: $(PATH_TO_NODE_MODULES) $(LINT_DEPS)
