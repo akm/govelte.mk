@@ -8,7 +8,7 @@ include $(PATH_TO_PROJECT)/.govelte.config.mk
 setup: $(NODE_MODULES) 
 	$(MAKE) $(FIREBASE_CONFIG_FILE)
 
-FIREBASE_CONFIG_FILE=src/lib/firebase/firebaseconfig.ts
+FIREBASE_CONFIG_FILE=src/lib/firebaseconfig.ts
 $(FIREBASE_CONFIG_FILE):
 	cp $(FIREBASE_CONFIG_FILE).dummy $(FIREBASE_CONFIG_FILE)
 
