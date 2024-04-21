@@ -1,12 +1,12 @@
 # DEV_DEPS の定義は この .mk ファイルを include する前に定義してください
 .PHONY: dev
-dev: $(DEV_DEPS)
+dev:
 	$(DEV_ENVS) npm run dev
 
-.PHONY: dev_servers
-dev_servers:
+.PHONY: backends_dev
+backends_dev:
 	$(DEV_ENVS) \
-		$(MAKE) -C $(PATH_TO_SERVERS) dev
+		$(MAKE) -C $(PATH_TO_BACKENDS) dev
 
 .PHONY: dev_run
 dev_run:$(DEV_DEPS)
