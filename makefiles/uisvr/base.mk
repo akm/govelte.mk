@@ -4,6 +4,10 @@ $(PATH_TO_NODE_MODULES):
 
 .PHONY: install
 install:
+	npm ci
+
+.PHONY: install_latest
+install_latest:
 	npm install && \
 	npm install --save-dev @bufbuild/buf @connectrpc/protoc-gen-connect-es @bufbuild/protoc-gen-es && \
 	npm install @connectrpc/connect @connectrpc/connect-web @bufbuild/protobuf
