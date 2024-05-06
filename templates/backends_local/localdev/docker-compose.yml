@@ -28,7 +28,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "${APP_PORT_FIREBASE_AUTH}:9099"
-      - "${APP_FIREBASE_EMULATOR_SUITE_PORT}:4000"
+      - "${APP_PORT_FIREBASE_EMULATOR_SUITE}:4000"
     volumes:
       - ./data/firebase-emulators:/srv/firebase-emulators/data
     command: firebase emulators:start --import /srv/firebase-emulators/data/firebase --export-on-exit /srv/firebase-emulators/data/firebase
