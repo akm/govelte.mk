@@ -1,6 +1,6 @@
 PLAYWRIGHT_ENVS=\
-	APP_UISVR_HTTP_PORT=$(APP_PORT_UISVR_HTTP_e2e_test) \
-	APP_APISVR_HTTP_PORT=$(APP_PORT_APISVR_HTTP_e2e_test)
+	APP_UISVR_PORT=$(APP_PORT_UISVR_e2e_test) \
+	APP_APISVR_PORT=$(APP_PORT_APISVR_e2e_test)
 
 .PHONY: test_integration
 test_integration: test_integration_reup test_integration_run

@@ -9,12 +9,10 @@
 # clients/uisvr/test:unit        | local,github             | -           | -           | -        | -        | -                       |
 # servers/apisvr/test            | local,github             | -           | -           | -        | 3311     | 9091                    |
 
-APP_PORT_APISVR_HTTP_dev?=8000
-APP_PORT_APISVR_HTTP_e2e_test?=8001
-APP_PORT_APISVR_GRPC_dev?=8080
-APP_PORT_APISVR_GRPC_e2e_test?=8081
-APP_PORT_UISVR_HTTP_dev?=5173
-APP_PORT_UISVR_HTTP_e2e_test?=4173
+APP_PORT_APISVR_dev?=8000
+APP_PORT_APISVR_e2e_test?=8001
+APP_PORT_UISVR_dev?=5173
+APP_PORT_UISVR_e2e_test?=4173
 APP_PORT_MYSQL_dev?=3306
 APP_PORT_MYSQL_e2e_test?=3307
 APP_PORT_MYSQL_unit_test?=3311

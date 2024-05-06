@@ -10,4 +10,4 @@ backends_dev:
 
 .PHONY: dev_run
 dev_run:$(DEV_DEPS)
-	$(DEV_ENVS) npx vite dev --port $(APP_PORT_UISVR_HTTP_dev)
+	$(DEV_ENVS) npx vite dev --port $(APP_PORT_UISVR_dev)
