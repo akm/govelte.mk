@@ -1,0 +1,6 @@
+PATH_TO_PROJECT:=../../..
+include $(PATH_TO_PROJECT)/.config.mk
+
+ENVS=\
+	APP_MYSQL_DATABASE_NAME=$(APP_MYSQL_DATABASE_NAME)
+include $(PATH_TO_GOAVELTE_MAKEFILES)/localdev/base.mk

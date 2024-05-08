@@ -3,7 +3,18 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "goveltemk": "./bin/goveltemk.js"
+  },
+  "files": [
+    "dist/**",
+    "makefiles/**",
+    "templates/**"
+  ],
   "scripts": {
+    "lint": "eslint .",
+    "fix": "prettier . --write",
+    "check": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +37,16 @@
   "bugs": {
     "url": "https://github.com/akm/govelte.mk/issues"
   },
-  "homepage": "https://github.com/akm/govelte.mk#readme"
+  "homepage": "https://github.com/akm/govelte.mk#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^20.12.5",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.0.0",
+    "prettier": "3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4",
+    "typescript-eslint": "^7.5.0"
+  }
 }
